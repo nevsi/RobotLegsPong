@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AS3Classpath>
+<AS3Classpath generateProblems="false" type="lib" useAsSharedCode="false">lib/robotlegs-framework-v1.0.0.swc</AS3Classpath>
+<AS3Classpath generateProblems="true" type="source" useAsSharedCode="false">src</AS3Classpath>
+<AS3Classpath generateProblems="false" type="lib" useAsSharedCode="false">playerglobal.swc</AS3Classpath>
+<AS3Classpath generateProblems="false" type="lib" useAsSharedCode="false">lib/as3-signals.swc</AS3Classpath>
+<AS3Classpath generateProblems="false" type="lib" useAsSharedCode="false">lib/asunit4-alpha.swc</AS3Classpath>
+<AS3Classpath generateProblems="true" type="source" useAsSharedCode="false">test</AS3Classpath>
+</AS3Classpath>
