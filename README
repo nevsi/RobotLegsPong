@@ -1,0 +1,9 @@
+This is my first (public) attempt at putting together a game using RobotLegs.
+
+Most of the examples I have found on RobotLegs appear to be RIA-style, event-driven apps. I wanted to use RobotLegs to create a ticker-based game.
+
+I also wanted to experiment with using as3signals rather than the event bus. This makes quite a bit of the RobotLegs source redundant. Because of that I haven't used the Actor class as it doesn't add anything to the structure; I can still use the [Inject] and [PostConstruct] metatags in mapped classes.
+
+The bat collision logic was written quickly and could use considerable improvement, particularly for corner collision.
+
+The bat maneuvering logic could also use work: currently they have to be click-and-dragged, for demonstration purposes.
