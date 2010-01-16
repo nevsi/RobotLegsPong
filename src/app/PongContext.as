@@ -52,11 +52,11 @@ package app
 			
 			var leftBat:Bat = new Bat(LEFT_COLOR);
 			leftBat.x = 100;
-			leftBat.y = Math.random() * 600;
+			leftBat.y = 300;
 			contextView.addChild(leftBat);			
 			var rightBat:Bat = new Bat(RIGHT_COLOR);
 			rightBat.x = 670;
-			rightBat.y = Math.random() * 600;
+			rightBat.y = 300;
 			contextView.addChild(rightBat);	
 			
 			var ball:Ball = new Ball();
