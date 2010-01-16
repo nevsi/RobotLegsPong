@@ -35,14 +35,12 @@ package app
 
 		override public function startup():void
 		{
-			var ticker:Ticker = new EnterFrameTicker(contextView);
-			injector.mapValue(Ticker, ticker);
-			
-			injector.mapClass(BatGeometry, BatGeometryModel);
-			
+			injector.mapSingletonOf(Ticker, EnterFrameTicker);
 			injector.mapSingletonOf(Score, ScoreModel);
 			injector.mapSingletonOf(Geometry, GeometryModel);
 			injector.mapSingleton(DragMechanism);
+			
+			injector.mapClass(BatGeometry, BatGeometryModel);
 						mediatorMap.mapView(Background, BackgroundMediator);
 			mediatorMap.mapView(ScoreBoard, ScoreBoardMediator);			mediatorMap.mapView(Ball, BallMediator);			mediatorMap.mapView(Bat, BatMediator);
 			

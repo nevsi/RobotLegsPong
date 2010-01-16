@@ -1,6 +1,6 @@
 package app.ticker 
 {
-	import flash.display.DisplayObjectContainer;
+	import flash.display.Shape;
 	import flash.events.Event;
 
 	public class EnterFrameTicker implements Ticker
@@ -9,11 +9,11 @@ package app.ticker
 		
 		private var count:int;
 		
-		private var stage:DisplayObjectContainer;
+		private var shape:Shape;
 		
-		public function EnterFrameTicker(root:DisplayObjectContainer)
+		public function EnterFrameTicker()
 		{
-			this.stage = root;
+			shape = new Shape();
 			fns = [];
 			count = 0;
 			
@@ -22,12 +22,12 @@ package app.ticker
 		
 		public function start():void
 		{
-			stage.addEventListener(Event.ENTER_FRAME, onEnterFrame);
+			shape.addEventListener(Event.ENTER_FRAME, onEnterFrame);
 		}
 		
 		public function stop():void
 		{
-			stage.removeEventListener(Event.ENTER_FRAME, onEnterFrame);
+			shape.removeEventListener(Event.ENTER_FRAME, onEnterFrame);
 		}
 		
 		public function add(fn:Function):void
