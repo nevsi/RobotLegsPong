@@ -1,3 +1,5 @@
-as3_classpath
+.as3_classpath
 .project
 .settings/*
+
+bin/*
