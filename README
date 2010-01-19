@@ -7,3 +7,7 @@ I also wanted to experiment with using as3signals rather than the event bus. Thi
 The bat collision logic was written quickly and could use considerable improvement, particularly for corner collision.
 
 The bat maneuvering logic could also use work: currently they have to be click-and-dragged, for demonstration purposes.
+
+For More Information, See:
+
+http://alecmce.com/library/robotlegspong1
